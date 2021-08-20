@@ -3,7 +3,7 @@ pipeline {
     stages {
       stage (build){
         steps {
-          abc....
+          sh 'docker build -t --name dockerimage -p 8000:8000 jenkinsdocker .'
         }
       }
       stage (image security scan){
