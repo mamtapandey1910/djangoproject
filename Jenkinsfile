@@ -8,22 +8,22 @@ pipeline {
       }
       stage (image security scan){
         steps {
-          abc....
+           sh 'echo "Hello image"'
         }
       }
       stage (deploy){
         steps {
-          abc.......
+           sh 'echo "Hello deploy"'
         }
       }
       stage (validate){
         steps {
-          abc.......
+          sh 'echo "Hello validate"'
         }
       }
       stage (post){
         steps {
-          abc.....
+           sh 'echo "Hello post"'
         }
       }
     }
